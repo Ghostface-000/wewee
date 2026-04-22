@@ -1,4 +1,9 @@
- .popup {
+body{
+ background-color: black;
+ color: white;
+}
+
+.popup {
     position: fixed;
     left: 10px;
     bottom: 20px;
