@@ -24,6 +24,15 @@ body{
     animation-delay: 2s;
 }
 
+.popup a {
+    color: white;
+    text-decoration: none;
+}
+
+.popup a:hover {
+    color: #35c7ff;
+    text-decoration: none;
+}
 
 @keyframes slideInOut {
     0% {
