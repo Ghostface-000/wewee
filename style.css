@@ -13,7 +13,8 @@ body{
     align-items: center;
     border-radius: 30px;
     display: flex;
-    justify-content: right;
+    justify-content: center;
+    text-shadow: 2px 3px 12px black;
     font-weight: 800;
     font-family: system-ui;
     background-image: url(https://www.w3schools.com/css/ocean.jpg);
