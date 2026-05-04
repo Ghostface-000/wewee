@@ -7,8 +7,8 @@ body{
 
 .popup {
     position: fixed;
-    left: 10px;
-    bottom: 20px;
+    left: 20px;
+    bottom: 17px;
     background: #cff122;
     width: 300px;
     height: 300px;
