@@ -22,6 +22,12 @@ body{
     transform: translateX(-120%);
     animation: slideInOut 8s ease-in-out forwards;
     animation-delay: 2s;
+    transition: all 0.2s ease;
+}
+
+.popup:hover{
+    scale: 1.01;
+    transition: all 0.2s ease;
 }
 
 .popup a {
