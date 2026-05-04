@@ -18,7 +18,7 @@ body{
     font-weight: 800;
     font-family: system-ui;
     background-image: url(https://www.w3schools.com/css/ocean.jpg);
-    box-shadow: 7px 7px #b7d131;
+    box-shadow: 0px 0px 13px #adff00;
     transform: translateX(-120%);
     animation: slideInOut 8s ease-in-out forwards;
     animation-delay: 2s;
