@@ -5,6 +5,13 @@ body{
  background-size: cover;
 }
 
+.imgC {
+    display: block;
+    margin: 0 auto;
+    width: 25%;
+    height: 28%;
+}
+
 .popup {
     position: fixed;
     left: 20px;
