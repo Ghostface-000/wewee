@@ -5,6 +5,18 @@ body{
  background-size: cover;
 }
 
+.bg-light {
+ background-color: #313131 !important;
+}
+
+.navbar-light .navbar-brand {
+ color: white;
+}
+
+.nav-link .a{
+    color: white;
+}
+
 .ticker {
     background-image: linear-gradient(174deg, #ff7800, #a23600);
     color: white;
