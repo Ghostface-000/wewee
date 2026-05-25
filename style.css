@@ -18,6 +18,10 @@ html {
     height: 100vh;
 }
 
+section {
+ min-height: 100vh;
+}
+
 .ticker {
     background-image: linear-gradient(174deg, #ff7800, #a23600);
     color: white;
