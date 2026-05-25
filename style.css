@@ -9,6 +9,10 @@ body{
     background-color: #000000 !important;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .ticker {
     background-image: linear-gradient(174deg, #ff7800, #a23600);
     color: white;
