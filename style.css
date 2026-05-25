@@ -5,16 +5,8 @@ body{
  background-size: cover;
 }
 
-.bg-light {
- background-color: #313131 !important;
-}
-
-.navbar-light .navbar-brand {
- color: white;
-}
-
-.nav-link .a{
-    color: white;
+.bg-dark {
+    background-color: #000000 !important;
 }
 
 .ticker {
