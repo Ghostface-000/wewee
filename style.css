@@ -35,6 +35,9 @@ html {
 
  #btn:hover {
      background-color: white;
+     color: black;
+     transform: scale(1.1);
+     transition: all 0.2s ease;
 }
 
 #home {
