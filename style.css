@@ -74,6 +74,19 @@ html {
 .bannerslide{
 }
 
+#banner .text {
+    position: absolute;
+    top: 28%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 #000000;
+    font-size: 40px;
+    background: #00000052;
+    padding: 158px 10px;
+}
+
 #home {
     width: 100%;
     height: 100vh;
