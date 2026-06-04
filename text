@@ -1,0 +1,6 @@
+changing cat colours:
+
+#CategoryPanel a[href*="packages"] {
+    background: linear-gradient(to bottom, #da028b, #db038c) !important;
+    color: #ffffff !important;
+}
