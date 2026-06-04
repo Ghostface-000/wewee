@@ -4,3 +4,15 @@ changing cat colours:
     background: linear-gradient(to bottom, #da028b, #db038c) !important;
     color: #ffffff !important;
 }
+
+add text before: 
+
+#TopLinksInner a::before{
+    content: "TEST ";
+    color:white;
+}
+
+#TopLinksInner a[href="/"]::before{
+    content: "⌂ ";
+    color:white;
+}
