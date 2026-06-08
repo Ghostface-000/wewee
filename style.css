@@ -57,11 +57,13 @@ html {
 }
 
 #banner {
-    width: 100%;
+    width: 65%;
     height: 100vh;
     overflow: hidden;
     position: relative;
     margin-bottom: 20px;
+ margin: 0 auto;
+ 
 }
 
 #banner img {
@@ -77,14 +79,13 @@ html {
 #banner .text {
     position: absolute;
     top: 28%;
-    left: 21%;
+    left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
     box-shadow: 0 0 #000000;
     font-size: 40px;
-    background: #00000052;
-    padding: 158px 10px;
+    padding: 96px 10px;
 }
 
 #home {
