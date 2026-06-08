@@ -93,6 +93,8 @@ html {
 #home {
     width: 100%;
     height: 100vh;
+ display: flex;
+ justify-content: center;
 }
 
 section {
@@ -115,8 +117,6 @@ section {
 .imgC {
     display: block;
     margin: 0 auto;
-    width: 25%;
-    height: 28%;
 }
 
 .popup {
