@@ -109,14 +109,25 @@ fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vQtoq-y1C6H4m-B_z_KgQ_mA8
     const grid = document.getElementById("grid");
 
     rows.slice(1).forEach(row => {
-      const [agent, status, tickets, completed] = row;
+      const [
+        name,
+        date,
+        mistake,
+        severity,
+        ticket,
+        notes,
+        action
+      ] = row;
 
       grid.innerHTML += `
-        <div class="card ${status.toLowerCase()}">
-          <h3>${agent}</h3>
-          <p>Status: ${status}</p>
-          <p>Tickets: ${tickets}</p>
-          <p>Completed: ${completed}</p>
+        <div class="card ${severity.toLowerCase()}">
+          <h3>${name}</h3>
+          <p><strong>Date:</strong> ${date}</p>
+          <p><strong>Mistake:</strong> ${mistake}</p>
+          <p><strong>Severity:</strong> ${severity}</p>
+          <p><strong>Ticket:</strong> ${ticket}</p>
+          <p><strong>Notes:</strong> ${notes}</p>
+          <p><strong>Action By:</strong> ${action}</p>
         </div>
       `;
     });
