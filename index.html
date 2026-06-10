@@ -97,43 +97,6 @@
 
     <div id="test">
         <a href="#test">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</a>
-    
-    <div id="grid"></div>
-
-<script>
-fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vQtoq-y1C6H4m-B_z_KgQ_mA8HIDuKhTUXZnI5hbyWxhaJpGEY467aHHrKbo2mCOt6GFIfD4JUD-JPy/pub?output=csv")
-  .then(res => res.text())
-  .then(csv => {
-    const rows = csv.trim().split("\n").map(r => r.split(","));
-
-    const grid = document.getElementById("grid");
-
-    rows.slice(1).forEach(row => {
-      const [
-        name,
-        date,
-        mistake,
-        severity,
-        ticket,
-        notes,
-        action
-      ] = row;
-
-      grid.innerHTML += `
-        <div class="card ${severity.toLowerCase()}">
-          <h3>${name}</h3>
-          <p><strong>Date:</strong> ${date}</p>
-          <p><strong>Mistake:</strong> ${mistake}</p>
-          <p><strong>Severity:</strong> ${severity}</p>
-          <p><strong>Ticket:</strong> ${ticket}</p>
-          <p><strong>Notes:</strong> ${notes}</p>
-          <p><strong>Action By:</strong> ${action}</p>
-        </div>
-      `;
-    });
-  });
-</script>
-
     </div>
 
 <a href="#top" id="btn">↑</a>
