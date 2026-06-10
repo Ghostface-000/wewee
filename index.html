@@ -97,6 +97,32 @@
 
     <div id="test">
         <a href="#test">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</a>
+    
+    <div id="grid"></div>
+
+<script>
+fetch("https://docs.google.com/spreadsheets/d/e/XXXX/pub?output=csv")
+  .then(res => res.text())
+  .then(csv => {
+    const rows = csv.trim().split("\n").map(r => r.split(","));
+
+    const grid = document.getElementById("grid");
+
+    rows.slice(1).forEach(row => {
+      const [agent, status, tickets, completed] = row;
+
+      grid.innerHTML += `
+        <div class="card ${status.toLowerCase()}">
+          <h3>${agent}</h3>
+          <p>Status: ${status}</p>
+          <p>Tickets: ${tickets}</p>
+          <p>Completed: ${completed}</p>
+        </div>
+      `;
+    });
+  });
+</script>
+
     </div>
 
 <a href="#top" id="btn">↑</a>
