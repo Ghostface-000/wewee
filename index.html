@@ -101,7 +101,7 @@
     <div id="grid"></div>
 
 <script>
-fetch("https://docs.google.com/spreadsheets/d/e/XXXX/pub?output=csv")
+fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vQtoq-y1C6H4m-B_z_KgQ_mA8HIDuKhTUXZnI5hbyWxhaJpGEY467aHHrKbo2mCOt6GFIfD4JUD-JPy/pub?output=csv")
   .then(res => res.text())
   .then(csv => {
     const rows = csv.trim().split("\n").map(r => r.split(","));
