@@ -60,13 +60,17 @@ html {
     }
 }
 
-.homebar{
-    display:flex;
+.homebar {
+    display: flex;
     justify-content: center;
     gap: 40px;
-    font-weight: bold;
+    font-weight: bolder;
     padding: 26px;
     background: black;
+    width: 16%;
+    margin: 0 auto;
+    border-radius: 41px;
+    margin-top: 35px;
 }
 
 .homebar a{
