@@ -60,6 +60,12 @@ html {
     }
 }
 
+.homebar{
+    display:flex;
+    justify-content: center;
+    gap: 40px;
+}
+
 #banner {
     width: 65%;
     height: 100vh;
