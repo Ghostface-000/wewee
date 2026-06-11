@@ -64,6 +64,13 @@ html {
     display:flex;
     justify-content: center;
     gap: 40px;
+    font-weight: bold;
+    padding: 26px;
+    background: black;
+}
+
+.homebar a{
+    color: white;
 }
 
 #banner {
