@@ -81,6 +81,26 @@ html {
     border-radius: 6px;
 }
 
+#contenttwo {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #000;
+    color: #fff;
+    padding: 25px 45px 40px;
+    box-shadow: -1px 5px 10px 5px #00e5ff3b;
+    border-radius: 6px;
+}
+
+#contentthree {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #000;
+    color: #fff;
+    padding: 25px 45px 40px;
+    box-shadow: -1px 5px 10px 5px #00e5ff3b;
+    border-radius: 6px;
+}
+
 .copy-btn {
     display: inline-block;
     margin-bottom: 20px;
