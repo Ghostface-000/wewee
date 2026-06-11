@@ -110,14 +110,13 @@ html {
     padding: 25px 45px 40px;
     box-shadow: -1px 5px 10px 5px #00e5ff3b;
     border-radius: 6px;
+    transition: all 0.2s ease;
 }
 
 #contenttwo:hover {
     box-shadow: -1px 5px 10px 8px #27ecff;
     border-radius: 6px;
     scale: 1.010;
-    transition: all 0.2s ease;
-    
 }
 
 #contentthree {
