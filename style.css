@@ -93,7 +93,6 @@ html {
     box-shadow: -1px 5px 10px 8px #00e5ff3b;
     border-radius: 6px;
     transition: all 0.2s ease;
-    animation: jumpUp 0.5s;
 }
 
 #contentone:hover {
@@ -118,7 +117,6 @@ html {
     border-radius: 6px;
     scale: 1.010;
     transition: all 0.2s ease;
-    animation: jumpUp 0.5s;
     
 }
 
@@ -131,7 +129,6 @@ html {
     box-shadow: -1px 5px 10px 5px #00e5ff3b;
     border-radius: 6px;
     transition: all 0.2s ease;
-    animation: jumpUp 0.5s;
 }
 
 #contentthree:hover {
