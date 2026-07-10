@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Portfolio Sleeve Showcase</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<style>
+
+*{
+    box-sizing:border-box;
+}
+
+
+body{
+
+    margin:0;
+
+    min-height:100vh;
+
+    background:
+    radial-gradient(
+    circle at top,
+    #444,
+    #111 70%
+    );
+
+
+    font-family:Arial,sans-serif;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    overflow-x:hidden;
+
+    color:white;
+
+}
+
+
+
+
+
+.wrapper{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+
+
+
+
+h1{
+
+    font-size:55px;
+
+    letter-spacing:8px;
+
+    margin:0 0 10px;
+
+}
+
+
+
+
+
+.subtitle{
+
+    color:#aaa;
+
+    margin-bottom:40px;
+
+}
+
+
+
+
+
+/* SHELF */
+
+.shelf{
+
+
+    height:520px;
+
+
+    width:1200px;
+
+
+    max-width:95%;
+
+
+    margin:auto;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    overflow:visible;
+
+
+}
+
+
+
+
+
+/* SLEEVE */
+
+.case{
+
+
+    height:420px;
+
+
+    width:28px;
+
+
+    flex-shrink:0;
+
+
+    margin-left:-8px;
+
+
+    position:relative;
+
+
+    cursor:pointer;
+
+
+    transition:
+
+
+    width .45s ease,
+
+    height .45s ease,
+
+    margin .45s ease,
+
+    transform .45s ease;
+
+
+    overflow:hidden;
+
+
+}
+
+
+
+
+
+/* SLEEVE PNG */
+
+.case img{
+
+
+    height:100%;
+
+
+    width:auto;
+
+
+    position:absolute;
+
+
+    left:0;
+
+
+    top:0;
+
+
+}
+
+
+
+
+
+/* HOVER FLICK */
+
+.case:hover{
+
+
+    width:55px;
+
+
+    margin-left:4px;
+
+
+    margin-right:4px;
+
+
+    transform:
+
+    translateY(-12px);
+
+
+    z-index:10;
+
+
+}
+
+
+
+
+
+/* OPEN */
+
+.case.active{
+
+
+    width:380px;
+
+
+    height:500px;
+
+
+    margin-left:35px;
+
+
+    margin-right:35px;
+
+
+    transform:
+
+    translateY(10px);
+
+
+    z-index:50;
+
+
+    box-shadow:
+
+
+    0 40px 100px rgba(0,0,0,.9);
+
+
+}
+
+
+
+
+
+/* PROJECT IMAGE */
+
+.case.active img{
+
+
+    width:100%;
+
+
+    height:100%;
+
+
+    object-fit:contain;
+
+
+}
+
+
+
+
+
+/* GLASS REFLECTION */
+
+.case.active:after{
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    inset:0;
+
+
+    background:
+
+
+    linear-gradient(
+
+    110deg,
+
+    transparent,
+
+    rgba(255,255,255,.25),
+
+    transparent
+
+    );
+
+
+    pointer-events:none;
+
+
+}
+
+
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+
+<div class="wrapper">
+
+
+<h1>
+MY WORK
+</h1>
+
+
+<div class="subtitle">
+Creative projects & digital experiences
+</div>
+
+
+
+
+<div class="shelf">
+
+
+
+<div class="case">
+
+<img src="https://support-site-wahidur.web1.bookingonline.co.uk/theme/1sleeve.png">
+
+</div>
+
+
+
+<div class="case">
+
+<img src="https://support-site-wahidur.web1.bookingonline.co.uk/theme/1sleeve.png">
+
+</div>
+
+
+
+<div class="case">
+
+<img src="https://support-site-wahidur.web1.bookingonline.co.uk/theme/1sleeve.png">
+
+</div>
+
+
+
+<div class="case">
+
+<img src="https://support-site-wahidur.web1.bookingonline.co.uk/theme/1sleeve.png">
+
+</div>
+
+
+
+<div class="case">
+
+<img src="https://support-site-wahidur.web1.bookingonline.co.uk/theme/1sleeve.png">
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<script>
+
+
+const cases = document.querySelectorAll(".case");
+
+
+const sleeveImage =
+"https://support-site-wahidur.web1.bookingonline.co.uk/theme/1sleeve.png";
+
+
+const projectImages = [
+
+"https://support-site-wahidur.web1.bookingonline.co.uk/theme/ailogo@2x.png",
+
+sleeveImage,
+
+sleeveImage,
+
+sleeveImage,
+
+sleeveImage
+
+];
+
+
+
+
+cases.forEach((item,index)=>{
+
+
+item.onclick = ()=>{
+
+
+// Close if already open
+
+if(item.classList.contains("active")){
+
+
+item.classList.remove("active");
+
+
+item.querySelector("img").src = sleeveImage;
+
+
+return;
+
+
+}
+
+
+
+
+// Close everything else
+
+cases.forEach((x)=>{
+
+
+x.classList.remove("active");
+
+
+x.querySelector("img").src = sleeveImage;
+
+
+});
+
+
+
+
+
+// Open selected
+
+item.classList.add("active");
+
+
+item.querySelector("img").src = projectImages[index];
+
+
+
+};
+
+
+
+});
+
+
+
+</script>
+
+
+</body>
+</html>
